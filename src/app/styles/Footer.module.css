@@ -4,9 +4,11 @@
     justify-content: center;
     background-color: #333;
     height: 150px;
-    margin-top: 55vh;
+    margin-top: 50vh;
     border-top: 3px solid #111;
     color: #fff;
+    
+
 }
 .footer span {
     font-weight: bold;
