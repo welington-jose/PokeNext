@@ -4,8 +4,8 @@ export const metadata = {
   
 };
 
-import Navbar from "@/components/Navbar/page";
-import Footer from "@/components/Footer/page";
+import Navbar from "../../components/Navbar/page";
+import Footer from "../../components/Footer/page";
 
 
 export default function Layout({children}) {
