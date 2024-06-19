@@ -8,7 +8,7 @@ export const metadata = {
 }
 
 export default async function getStaticProps() {
-  const maxPokemons = 251
+  const maxPokemons = 500
   const api ='https://pokeapi.co/api/v2/pokemon/'
 
   const res = await fetch(`${api}/?limit=${maxPokemons}`)
