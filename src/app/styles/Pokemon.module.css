@@ -1,5 +1,7 @@
 .pokemon_container {
     text-align: center;
+    background-color: #333;
+    height: 100vh;
 }
 .title {
     font-size: 2.5em;
@@ -107,4 +109,26 @@
   }
   .number p {
     padding: 0 1em;
+  }
+  .data_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+  .data_container div {
+    margin: 1em 0;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .data_heigt {
+    border-right: 1px solid #ccc;
+  }
+  .data_heigt p{
+    margin: 10px;
+  }
+  .data_weigth p{
+    margin: 10px;
   }

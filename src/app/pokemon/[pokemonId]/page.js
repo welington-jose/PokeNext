@@ -29,8 +29,8 @@ export default async function PokemonPage({ params }) {
       <h1 className={styles.title}>{pokemon.name}</h1>
       <Image
       src={`https://raw.githubusercontent.com/wellrccity/pokedex-html-js/master/assets/img/pokemons/poke_${pokemonId}.gif`}
-      width={150}
-      height={250}
+      width={200}
+      height={300}
       alt={pokemon.name}
       />
       <div className={styles.number}>
