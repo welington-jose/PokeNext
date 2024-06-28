@@ -41,7 +41,7 @@
     background-color: #39f;
   }
   
-  .type_eletric {
+  .type_electric {
     background-color: #fc3;
   }
   
@@ -121,10 +121,10 @@
     align-items: center;
     justify-content: center;
   }
-  .data_heigt {
+  .data_height {
     border-right: 1px solid #ccc;
   }
-  .data_heigt p{
+  .data_height p{
     margin: 10px;
   }
   .data_weigth p{

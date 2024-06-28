@@ -8,7 +8,7 @@ export async function generateStaticParams() {
   const res = await fetch(`${api}?limit=${maxPokemons}`);
   const data = await res.json();
 
-  return data.results.map((index) => ({
+  return data?.results.map((index) => ({
 
     pokemonId: (index + 1).toString(), // Usando o índice + 1 para os IDs
 
@@ -46,7 +46,7 @@ export default async function PokemonPage({ params }) {
         </div>
       </div>
       <div className={styles.data_container}>
-        <div className={styles.data_heigt}>
+        <div className={styles.data_height}>
           <h4>Altura:</h4>
          {
           pokemon.height >= 10
