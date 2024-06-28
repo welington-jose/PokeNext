@@ -8,7 +8,7 @@ export async function generateStaticParams() {
   const res = await fetch(`${api}?limit=${maxPokemons}`);
   const data = await res.json();
 
-  return data.results.map((pokemon, index) => ({
+  return data.results.map((_, index) => ({
 
     pokemonId: (index + 1).toString(), // Usando o índice + 1 para os IDs
 

@@ -3,7 +3,9 @@ import Link from "next/link"
 import styles from "@/app/styles/Card.module.css"
 
 export default function Card({pokemon}) {
-
+    if (!pokemon || !pokemon.id) {
+        return <div>Pokemon data is not available</div>;
+    }
     return(
         <div className={styles.card}>
             <Image
