@@ -1,14 +1,15 @@
 import Image from "next/image";
 import styles from "@/app/styles/Pokemon.module.css"
 
+
 export async function generateStaticParams() {
-  const maxPokemons = 251;
+  const maxPokemons = 500;
   const api = 'https://pokeapi.co/api/v2/pokemon/';
 
   const res = await fetch(`${api}?limit=${maxPokemons}`);
   const data = await res.json();
 
-  return data.results.map((_, index) => ({
+  return data.results.map((index) => ({
 
     pokemonId: (index + 1).toString(), // Usando o índice + 1 para os IDs
 
