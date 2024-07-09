@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "@/app/styles/Pokemon.module.css"
 
 export async function generateStaticParams() {
-  const maxPokemons = 501;
+  const maxPokemons = 201;
   const api = 'https://pokeapi.co/api/v2/pokemon/';
 
   const res = await fetch(`${api}?limit=${maxPokemons}`);
