@@ -52,8 +52,8 @@ export default function Home() {
         <input className={styles.input}
           placeholder="Pesquisar Pokemon"
           type="text"
-          value={searchTerm}
-          onChange={handleSearchChange}
+          value={searchTerm} // Valor do campo de pesquisa controlado pelo estado 'searchTerm'
+          onChange={handleSearchChange} // Chama a função handleSearchChange ao modificar o campo de pesquisa
         />
       </div>
 
