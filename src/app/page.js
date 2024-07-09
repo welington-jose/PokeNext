@@ -5,12 +5,12 @@ import Image from "next/image"
 import Card from "@/app/card/page"
 
 export default function Home() {
-  const [pokemons, setPokemons] = useState([])
-  const [searchTerm, setSearchTerm] = useState("")
+  const [pokemons, setPokemons] = useState([]) // Define o estado 'pokemons' como um array vazio e a função 'setPokemons' para atualizá-lo
+  const [searchTerm, setSearchTerm] = useState("", []) // Define o estado 'searchTerm' como uma string vazia e a função 'setSearchTerm' para atualizá-lo
 
-  useEffect(() => {
+  useEffect(() => { // Hook useEffect para lidar com efeitos colaterais na montagem do componente
     const fetchPokemons = async () => {
-      const maxPokemons = 301
+      const maxPokemons = 501
       const api = 'https://pokeapi.co/api/v2/pokemon/'
 
       const res = await fetch(`${api}/?limit=${maxPokemons}`)
@@ -22,13 +22,13 @@ export default function Home() {
         id: index + 1,
       }))
 
-      setPokemons(updatedResults)
+      setPokemons(updatedResults) // Atualiza o estado 'pokemons' com os resultados obtidos da API
     }
 
     fetchPokemons()
   }, [])
 
-  const handleSearchChange = (e) => {
+  const handleSearchChange = (e) => { // Filtra os pokemons com base no termo de pesquisa
     setSearchTerm(e.target.value)
   }
 
