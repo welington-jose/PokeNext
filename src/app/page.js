@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchPokemons = async () => {
-      const maxPokemons = 501
+      const maxPokemons = 301
       const api = 'https://pokeapi.co/api/v2/pokemon/'
 
       const res = await fetch(`${api}/?limit=${maxPokemons}`)
